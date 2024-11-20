@@ -6,7 +6,7 @@
 /*   By: giamrugg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:43:46 by giamrugg          #+#    #+#             */
-/*   Updated: 2024/11/20 15:07:35 by giamrugg         ###   ########.fr       */
+/*   Updated: 2024/11/20 16:51:31 by giamrugg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strcat(char *dest, char *src)
 	}
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	dest[20] = "Siamo";
@@ -36,4 +36,4 @@ int	main(void)
 	ft_strcat(dest, src);
 	printf("Dopo: %s\n", dest);
 	return (0);
-}
+}*/

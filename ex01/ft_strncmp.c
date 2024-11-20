@@ -6,7 +6,7 @@
 /*   By: giamrugg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:22:52 by giamrugg          #+#    #+#             */
-/*   Updated: 2024/11/20 14:41:31 by giamrugg         ###   ########.fr       */
+/*   Updated: 2024/11/20 16:51:50 by giamrugg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
+/*
 int	main(void)
 {
 	char	s1[] = "Hello";
@@ -40,4 +40,4 @@ int	main(void)
 	printf("Confronto tra s1 e s3 (5 caratteri): %d\n", ft_strncmp(s1, s3, 5));
 	printf("Confronto tra s1 e s4 (5 caratteri): %d\n", ft_strncmp(s1, s4, 5));
 	return (0);
-}
+}*/

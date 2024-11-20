@@ -1,52 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: giamrugg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 15:27:22 by giamrugg          #+#    #+#             */
-/*   Updated: 2024/11/20 16:51:14 by giamrugg         ###   ########.fr       */
+/*   Created: 2024/11/20 16:37:13 by giamrugg          #+#    #+#             */
+/*   Updated: 2024/11/20 16:50:43 by giamrugg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	if (*to_find == '\0')
+	unsigned int	i;
+
+	i = 0;
+	while (*dest != '\0')
 	{
-		return (str);
+		dest++;
 	}
-	while (*str != '\0')
+	while (*src != '\0' && i < nb)
 	{
-		while (*str && *to_find && *str == *to_find)
-		{
-			str++;
-			to_find++;
-		}
-		if (*to_find == '\0')
-		{
-			return (str);
-		}
-		str = str + 1;
+		*dest = *src;
+		dest++;
+		src++;
+		i++;
 	}
-	return (0);
+	*dest = '\0';
+	return (dest);
 }
 /*
 int	main(void)
 {
-	char	str[] = "Hello, world!";
-	char	f[] = "Caracas";
+	char	dest[50] = "Hello";
+	char	src[] = " World!";
+	unsigned int	nb = 3;
 
-	char	*r = ft_strstr(str, f);
-	if (r)
-	{
-		printf("Trovato '%s' in '%s'\n", r, str);
-	}
-	else
-	{
-		printf("'%s' non trovato in '%s'\n", f, str);
-	}
+	printf("Prima: %s\n", dest);
+	ft_strncat(dest, src, nb);
+	printf("Dopo: %s\n", dest);
 	return (0);
 }*/
